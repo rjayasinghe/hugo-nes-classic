@@ -1,8 +1,18 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <h1>posts</h1>
   {{ range first 10 .Data.Pages }}
-    <h1><a href={{ .Permalink }}>{{ .Title }}</a></h1>
+    {{ if eq .Type "post"}}
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ end }}
+  {{ end }}
+
+  <h1>pages</h1>
+  {{ range .Data.Pages }}
+    {{ if eq .Type "page" }}
+      <h2><a href="{{ .Permalink }}">{{ .Title }}</a></h2>
+    {{ end }}
   {{ end }}
 </body>
-</html>
+</html> 
