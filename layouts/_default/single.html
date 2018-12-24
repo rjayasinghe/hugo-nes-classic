@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>{{ .Title }}</title>
-</head>
-<body>
+{{ partial "header.html" . }}
   <h1>{{ .Title }}</h1>
-  <h2>{{ .Date.Format "Sun, Feb 11, 2018" }}</h2>
   {{ .Content }}
-</body>
-</html>
+{{ partial "header.html" . }}
