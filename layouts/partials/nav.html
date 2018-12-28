@@ -1,7 +1,9 @@
-<ul class="menu">
-{{ range .Site.Menus.main.ByWeight }}
-    <li class="menu">
-      <a class="nes-btn is-primary" title="{{ .Name }}" href="{{ .URL  | relLangURL }}">{{ .Name }}</a>
-    </li>
-{{ end }}
-</ul>
+<div id="mainmenu">
+    <ul class="menu">
+    {{ range .Site.Menus.main.ByWeight }}
+        <li class="menu">
+          <a class="nes-btn is-primary" title="{{ .Name }}" href="{{ .URL  | relLangURL }}">{{ .Name }}</a>
+        </li>
+    {{ end }}
+    </ul>
+</div>
