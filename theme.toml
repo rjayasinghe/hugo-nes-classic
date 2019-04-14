@@ -2,8 +2,8 @@ name = "Hugo NES classic"
 license = "MIT"
 licenselink = "https://github.com/rjayasinghe/hugo-nes-classic/blob/master/LICENSE.md"
 description = "a simple theme with NES classic styling"
-tags = ["blog", "company", "portfolio", "projects", "minimal", "responsive"]
-features = ["blog", "themes", "disqus", "minimal", "responsive", "staticman"]
+tags = ["blog", "static page", "minimal", "responsive"]
+features = ["blog", "themes", "minimal", "responsive", "staticman"]
 min_version = 0.28
 
 [author]
